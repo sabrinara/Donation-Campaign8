@@ -11,20 +11,17 @@ const Header = () => {
             <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-lg">
                     <h1 className="text-3xl font-extrabold text-black">I Grow By Helping People In Need</h1>
-                    <div>
-                        <div className="flex my-4 justify-center">
+                    <div className="flex my-4 justify-center ">
+                        <div className="border rounded-md">
                             <input
                                 type="text"
-                                id="coupon-input"
                                 placeholder="Search Now"
                                 className="px-4 py-2 bg-transparent 
-                                border rounded-tl-lg 
-                                rounded-bl-lg"
+                                 text-black"
                             />
 
                             <button
-                                id="apply-btn"
-                                className="text-white font-bold bg-[#FF444A] px-4 py-2 rounded-tr-lg rounded-br-lg"
+                                className="text-white font-bold bg-[#FF444A] px-4 py-2  rounded-none"
                             >
                                 Search
                             </button>

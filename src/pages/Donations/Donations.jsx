@@ -5,7 +5,7 @@ const Donations = () => {
     return (
         <div>
             
-            <h2>this id Donation</h2>
+            <h2>this is Donation</h2>
         </div>
     );
 };
