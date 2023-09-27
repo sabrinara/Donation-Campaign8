@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const DCard = ({ donation }) => {
     const { id, title, image, category, category_bg, card_bg, text_color, button_bg, description, price, button_text } = donation || {};
     return (
-        <div>
+        <div className="grid ">
             <div className="relative flex w-full max-w-[46rem] flex-row rounded-xl bg-clip-border shadow-md" style={{background:card_bg}}>
                 <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border">
                     <img src={image}
@@ -29,8 +29,6 @@ const DCard = ({ donation }) => {
                          
                         </button>
                    </Link>
-                      
-                   
                 </div>
             </div>
         </div>

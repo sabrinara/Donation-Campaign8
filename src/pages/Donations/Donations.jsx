@@ -6,18 +6,10 @@ const Donations = () => {
     const [noFound, setNoFound] = useState(false);
     const [isShow,setIsShow] = useState(false);
 
-  const [totalDonation,setTotalDonation] = useState(0);
-
     useEffect(() => {
         const addedDonationsItems = JSON.parse(localStorage.getItem("donation-list"));
         if (addedDonationsItems) {
             setDonationList(addedDonationsItems);
-
-      const total = addedDonationsItems.reduce((preValue,currentItem)=> preValue + currentItem.price,0)
-
-      console.log(total);
-
-      setTotalDonation(total)
         }
         else {
             setNoFound("No Donation Added");
@@ -59,7 +51,7 @@ const Donations = () => {
                         }
                     </div>
 
-                    {donationList.length > 2 && <button onClick={() => setIsShow(!isShow)} className="px-5 py-3 rounded-md  text-white bg-red-700 block mx-auto mt-6 mb-10" >
+                    {donationList.length > 4 && <button onClick={() => setIsShow(!isShow)} className="px-5 py-3 rounded-md  text-white bg-red-700 block mx-auto mt-6 mb-10" >
                         {isShow ? "See less" : "See more"}
                     </button>}
                 </div>
