@@ -38,7 +38,7 @@ const Donations = () => {
                         </div>
                     )}
 
-                    <div className="grid grid-cols-2 gap-5">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                         {
                             isShow ? donationList.map((donation) => (
                                 <DCard key={donation.id} donation={donation}></DCard>
