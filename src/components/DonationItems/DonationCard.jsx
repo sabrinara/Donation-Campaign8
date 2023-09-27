@@ -9,7 +9,7 @@ const DonationCard = ({ donation }) => {
     return (
         <div>
             <Link to={`/donation/${id}`}>
-                <div className="card h-[20rem] boarder rounded-lg shadow-2xl " style={{ background: card_bg }}>
+                <div className="card h-[20rem] border rounded-lg shadow-2xl " style={{ background: card_bg }}>
                     <div className="w-full">
                         <img src={image} alt="" />
                     </div>
