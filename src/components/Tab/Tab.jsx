@@ -1,8 +1,8 @@
 import swal from "sweetalert";
 
-const Tab = ({donation}) => {
+const Tab = ({ donation }) => {
 
-    const { id, title, image, category, category_bg, card_bg, text_color, button_bg, description, price, button_text} = donation || {};
+    const { id, title, image, category, category_bg, card_bg, text_color, button_bg, description, price, button_text } = donation || {};
 
 
     const handleDonation = () => {
@@ -40,10 +40,11 @@ const Tab = ({donation}) => {
                 </div>
             </div>
 
-            <div className="my-10 ">
-                <h1 className="font-semibold text-2xl my-3 ">{title}</h1>
-                <p className="">{description}</p>
+            <div className="my-5 md:my-10">
+                <h1 className="font-semibold text-2xl my-3">{title}</h1>
+                <p className="text-sm md:text-base">{description}</p>
             </div>
+
         </div>
     );
 };

@@ -2,10 +2,14 @@ import PieChartData from "./PieChartData";
 
 const Statistics = () => {
     return (
-        <div className="mx-auto w-[50%]">
-            <PieChartData></PieChartData>
+        <div className="flex justify-center items-center h-screen">
             <div className="text-center">
-                <p>Total Donation: <span className="inline-block w-[50px]  h-[3px] border-b-8 border-[#00C49F] mr-6"></span>Your Donation: <span className="inline-block w-[50px]  h-[3px] border-b-8 border-[#FF8042]"></span></p>
+                <PieChartData></PieChartData>
+                <p className="mb-4">
+                    Total Donation: <span className="inline-block w-[50px] h-[3px] border-b-8 mr-3 border-[#00C49F] md:mr-6 lg:mr-10"></span>
+                    Your Donation: <span className="inline-block w-[50px] h-[3px] border-b-8 border-[#FF8042]"></span>
+                </p>
+               
             </div>
         </div>
     );

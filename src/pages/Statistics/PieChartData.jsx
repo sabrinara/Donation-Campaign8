@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Cell} from 'recharts';
 
 const PieChartData = () => {
     const [dataId, setDataId] = useState([]);
@@ -45,7 +45,7 @@ const PieChartData = () => {
                 textAnchor={x > cx ? "start" : "end"}
                 dominantBaseline="central"
             >
-                {`${(percent * 100).toFixed(0)}%`}
+                {`${(percent * 100).toFixed(2)}%`}
             </text>
         );
     };
@@ -54,7 +54,7 @@ const PieChartData = () => {
         <PieChart width={400} height={400}>
           <Pie
             data={data}
-            cx={250}
+            cx={200}
             cy={200}
             labelLine={false}
             label={renderCustomizedLabel}

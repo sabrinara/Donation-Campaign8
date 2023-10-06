@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
 
-const DonationCard = ({ donation }) => {
+const DonationCard = ({donation}) => {
     const { id, title, image
         , category, category_bg, card_bg, text_color, button_bg, description, price
     } = donation || {};
 
     return (
-        <div>
+        <div className="flex justify-center md:w-1/2 lg:w-1/4 mb-4 mx-auto">
             <Link to={`/donation/${id}`}>
                 <div className="card w-64 h-[20rem] bg-base-100 shadow-2xl" style={{ background: card_bg }}>
                     <div className="w-full">
