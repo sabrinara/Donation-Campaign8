@@ -1,11 +1,10 @@
 
-import { useLoaderData } from "react-router-dom";
 import DonationItems from "../../components/DonationItems/DonationItems";
 import Header from "../../components/Header/Header";
 import { useEffect, useState } from "react";
 
 const Home = () => {
-    // const donations = useLoaderData();
+    
 
     const [data, setData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);

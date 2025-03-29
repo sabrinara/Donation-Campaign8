@@ -5,7 +5,7 @@ const Header = ({ searchData, handleSearch, setSearchData }) => {
 
 
     return (
-        <div className="hero h-[70vh]" style={{ backgroundImage: 'url(https://i.ibb.co/myPZxYg/cover.png)' }}>
+        <div className="hero h-[70vh]" style={{ backgroundImage: 'url(https://i.ibb.co.com/RXGBLb3/donate-sign-charity-campaign-53876-127165.jpg)' }}>
             <div className="hero-overlay bg-opacity-80 bg-slate-100 ">
                 {/* <Navbar></Navbar> */}
             </div>

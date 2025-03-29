@@ -14,6 +14,7 @@ const Donation = () => {
     useEffect(() => {
         const donationItem = donations?.find(donation => donation.id === id)
         setDonation(donationItem);
+        // console.log('asvsdv',donationItem);
     }, [id, donations]);
 
 

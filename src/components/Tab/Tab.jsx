@@ -2,7 +2,7 @@ import swal from "sweetalert";
 
 const Tab = ({ donation }) => {
 
-    const { id, title, image, category, category_bg, card_bg, text_color, button_bg, description, price, button_text } = donation || {};
+    const { id, title, image,  button_bg, description, price, button_text } = donation || {};
 
 
     const handleDonation = () => {
